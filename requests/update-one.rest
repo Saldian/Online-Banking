@@ -1,4 +1,4 @@
-PUT http://localhost:3001/api/user/634a5bdb441c0826a1b5e678
+PUT http://localhost:3001/api/user/636647dbcf540788bb5dfc2b
 content-type: application/json
 
 {
@@ -7,4 +7,5 @@ content-type: application/json
 "minit": "",
 "lastname": "Camara",
 "role": "Admin"
+ 
 }

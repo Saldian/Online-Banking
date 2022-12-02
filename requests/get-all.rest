@@ -1,1 +1,6 @@
-GET http://localhost:3001/api/user
+GET http://localhost:3001/api/user HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "6366478ccf540788bb5dfc29"
+}

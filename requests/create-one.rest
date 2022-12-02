@@ -1,10 +1,32 @@
-POST http://localhost:3001/api/user HTTP/1.1
+ POST http://localhost:3001/api/user HTTP/1.1
+ content-type: application/json
+
+ {
+ "email": "kumbiz@gmail.com",
+ "password": "ira",
+ "firstname": "kumba",
+ "minit": "",
+ "lastname": "Baldeh"
+
+ }
+
+ 
+
+
+
+###
+ POST http://localhost:3001/api/student HTTP/1.1
 content-type: application/json
 
-{
-"email": "ac@camariana.gm",
-"password": "secret",
-"firstname": "A",
-"minit": "",
-"lastname": "Camariana"
+
+
+ {
+"email": "diva@gmail.com",
+ "password": "mifa",
+ "firstname": "Daiana",
+ "minit": "",
+ "lastname": "Manneh",
+ "userId": "6366478ccf540788bb5dfc29"
 }
+
+

@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const connect = require('./modules/connect');
-//const routes = require('./routes/router');
+const routes = require('./routes/router');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -16,10 +16,11 @@ console.log('connected to database');
 console.log('error connecting to database:', error.message);
 }
 })();
+
 app.get('/', (req, res) => {
 res.status(200).json({ message: 'Peace' });
 });
 
-//app.use('/api', routes);
+app.use('/api', routes);
 
 module.exports = app;

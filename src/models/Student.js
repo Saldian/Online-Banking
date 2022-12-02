@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const userSchema = new mongoose.Schema(
+const studentSchema = new mongoose.Schema(
 {
 email: {
 type: String,
@@ -38,25 +38,19 @@ enum: ['Admin', 'User'],
 default: 'User'
 },
 
-student: [ {
-
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'student'
-
-
-}
-    
+user: [
+    {
+        type: mongoose.Schema.type,
+        ref: 'user'
+        
+    }
 ]
-   
-    
-
-
 },
 
 { timestamps: true }
 )
 
-userSchema.set('toJSON', {
+studentSchema.set('toJSON', {
     transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString()
     delete returnedObject._id
@@ -66,8 +60,7 @@ userSchema.set('toJSON', {
     }
     })
 
-    const User = mongoose.model('user', userSchema)
+    const Student = mongoose.model('student', studentSchema)
     module.exports = User
-    
     
     
