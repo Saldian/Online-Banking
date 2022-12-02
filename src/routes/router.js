@@ -3,7 +3,7 @@ const router = express.Router();
 
 const { createUser, getAllUsers, getOneUser, updateOneUser, deleteOneUser,} = require('../controllers/user');
 require('../controllers/user');
-const { createStudent, getAllStudent, getOneStudent, updateOneStudent  }  = require('../controllers/student');
+const { createStudent, getAllStudent, getOneStudent, updateOneStudent, deleteOneStudent  }  = require('../controllers/student');
 
 //user route
 router.post('/user', createUser);
@@ -17,6 +17,6 @@ router.post('/student', createStudent);
 router.get('/student', getAllStudent);
 router.get('/student/:id', getOneStudent);
 router.put('/student/:id', updateOneStudent);
-//router.delete('/user/:id', deleteOne);
+router.delete('/student/:id', deleteOneStudent);
 
 module.exports = router;

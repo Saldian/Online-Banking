@@ -80,28 +80,29 @@ return res.status(500).end();
 }
 };
 
-            //const deleteOne = async (req, res) => {
-//const id = req.params.id
- //try {
-  //                 const student = await Student.findOneAndRemove({ _id: id });
+const deleteOneStudent = async (req, res) => {
+  const userId = req.body.userId;
+const id = req.params.id
+ try {
+const student = await Student.findOneAndRemove({ _id: id });
 
-  //               if (!user) {
-  //                 return res.status(400).json({ message: 'student not found'});
- //            }
- ///          return res.status(201).json({ message: 'deleted successfully',
- //       data: user});
+  if (!student) {
+    return res.status(400).json({ message: 'student not found'});
+ }
+ return res.status(201).json({ message: 'deleted successfully',
+ data: user});
                    
- // }catch (error) {
- //   console.log(error);
- // return res.status(500).end();
- //}
- //}
+ }catch (error) {
+console.log(error);
+ return res.status(500).end();
+ }
+ }
 
             
 module.exports = {
 createStudent,
 getAllStudent,
 getOneStudent,
-updateOneStudent
- //deleteOne
+updateOneStudent,
+deleteOneStudent
 };
