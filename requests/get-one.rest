@@ -1,11 +1,13 @@
-GET http://localhost:3001/api/user/636647dbcf540788bb5dfc2b
+GET http://localhost:3001/api/user/6366478ccf540788bb5dfc29
 content-type: application/json
 
 
 ### Student
-GET http://localhost:3001/api/student/63773a79fcbfd67de6919422
+GET http://localhost:3001/api/student/6366478ccf540788bb5dfc29
+
+
 content-type: application/json 
 {
-    "userId": "636b76ea9daaabbcecf21442"
+    "userId": "63947b5fef13c30b565584c8"
 }
 

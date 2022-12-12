@@ -81,8 +81,9 @@ return res.status(500).end();
 };
 
 const deleteOneStudent = async (req, res) => {
-  const userId = req.body.userId;
 const id = req.params.id
+const userId = req.body.userId;
+
  try {
 const student = await Student.findOneAndRemove({ _id: id });
 
@@ -90,7 +91,7 @@ const student = await Student.findOneAndRemove({ _id: id });
     return res.status(400).json({ message: 'student not found'});
  }
  return res.status(201).json({ message: 'deleted successfully',
- data: user});
+ data: student});
                    
  }catch (error) {
 console.log(error);

@@ -1,4 +1,4 @@
-PUT http://localhost:3001/api/user/636647dbcf540788bb5dfc2b
+PUT http://localhost:3001/api/user/636647e6cf540788bb5dfc2d
 content-type: application/json
 
 {
@@ -8,4 +8,17 @@ content-type: application/json
 "lastname": "Camara",
 "role": "Admin"
  
+}
+
+### student
+PUT http://localhost:3001/api/student/6366478ccf540788bb5dfc29
+content-type: application/json
+
+{
+    "email": "ac@camariana.gm",
+    "firstname": "A",
+    "minit": "",
+    "lastname": "Camara",
+    "role": "Student",
+    "userId": "63947b5fef13c30b565584c8"
 }

@@ -40,7 +40,7 @@ default: 'User'
 
 user: [
     {
-        type: mongoose.Schema.type,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'user'
         
     }

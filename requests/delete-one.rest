@@ -1,1 +1,10 @@
-DELETE http://localhost:3001/api/user/636647dbcf540788bb5dfc2b
+DELETE http://localhost:3001/api/user/636647e6cf540788bb5dfc2d
+
+### student
+DELETE  http://localhost:3001/api/student/63948662cda8bcd54767d9bb
+
+content- type: application/json
+
+{
+    "userId": "63947b5fef13c30b565584c8"
+}

@@ -2,5 +2,5 @@ GET http://localhost:3001/api/user HTTP/1.1
 content-type: application/json
 
 {
-    "userId": "6366478ccf540788bb5dfc29"
+    "userId": "63947b5fef13c30b565584c8"
 }

@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const { createUser, getAllUsers, getOneUser, updateOneUser, deleteOneUser,} = require('../controllers/user');
+const { createUser, getAllUsers, getOneUser, updateOneUser, deleteOneUser} = require('../controllers/user');
 require('../controllers/user');
-const { createStudent, getAllStudent, getOneStudent, updateOneStudent, deleteOneStudent  }  = require('../controllers/student');
+const { createStudent, getAllStudent, getOneStudent, updateOneStudent, deleteOneStudent}  = require('../controllers/student');
 
 //user route
 router.post('/user', createUser);
